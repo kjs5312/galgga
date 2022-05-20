@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration 	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+  <typeAliases>
+
+    <typeAlias type="com.galgga.member.vo.MemberVO" alias="memberVO" />
+    <typeAlias type="com.galgga.business.main.vo.BusinessVO" alias="businessVO"/>
+    <typeAlias type="com.galgga.Lod.vo.LodVO" alias="lodVO"/>
+    <typeAlias type="com.galgga.Lod.vo.LodImgFileVO" alias="lodImgFileVO"/>
+    <typeAlias type="com.galgga.Lod.vo.UnitVO" alias="unitVO"/>
+    <typeAlias type="com.galgga.Lod.vo.UnitImgFileVO" alias="unitImgFileVO"/>
+	<typeAlias type="com.galgga.reserve.vo.ReserveVO" alias="reserveVO"/>
+	<typeAlias type="com.galgga.reserve.vo.BeforeResVO" alias="beforeResVO"/>
+	<typeAlias type="com.galgga.main.vo.MainListVO" alias="mainListVO"/>
+  </typeAliases>
+</configuration>
+
+
+

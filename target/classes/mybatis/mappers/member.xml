@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.member">
+<!-- 리절트 맵 정의 -->	
+	<resultMap id="memberResult" type="MemberVO">
+	
+		<result property="M_id" column="M_id" />
+		<result property="member_id" column="member_id" />
+		<result property="member_pw" column="member_pw" />
+		<result property="member_name" column="member_name" />
+		
+		<result property="gender" column="gender" />
+		<result property="birth_day" column="birth_day"/>
+		
+		<result property="phone1" column="phone1" />
+		<result property="phone2" column="phone2" />
+		<result property="phone3" column="phone3" />
+		
+		<result property="email1" column="email1" />
+		<result property="email2" column="email2" />
+		
+		<result property="post_num" column="post_num" />
+		<result property="address" column="address" />
+		<result property="marketing" column="marketing" />
+		<result property="joinDate" column="joinDate" />
+
+	</resultMap>	
+
+	<select id="login" resultType="memberVO"  parameterType="java.util.Map"  >
+	    <![CDATA[
+			select * from member_tbl
+			 where member_id=#{member_id}
+			 and member_pw=#{member_pw}			
+			 
+		]]>
+	</select>
+	
+	<select id="selectOverlappedID" parameterType="String" resultType="String">
+	   select case count(*) when 1 then 'true'when 0 then 'false' end
+	   from member_tbl
+	   where member_id = #{id}
+	</select>
+	
+  <insert id="insertNewMember"  parameterType="memberVO">
+  <![CDATA[
+    	insert into member_tbl(member_id,
+				 			   member_pw,
+                               member_name,
+                               gender,
+                               birth_day,
+                               phone1,
+                               phone2,
+                               phone3,
+                               email1,
+                               email2,
+                               post_num,
+                               address,
+                               marketing)
+                                
+							 values(#{member_id},
+									#{member_pw},
+									#{member_name},
+                                    #{gender},
+                                   	#{birth_day},
+                                    #{phone1},
+                                    #{phone2},
+                                    #{phone3},
+                                    #{email1},
+                                    #{email2},
+                                    #{post_num},
+                                    #{address},
+                                    #{marketing})
+                                    
+                                        
+   ]]>      
+  </insert>
+</mapper>

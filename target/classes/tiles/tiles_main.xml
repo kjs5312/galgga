@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+<!-- baseLayout -->
+   <definition name="baseLayout"  template="/WEB-INF/views/common/layout.jsp">
+   	  <put-attribute name="title" value="" />
+      <put-attribute name="header" value="/WEB-INF/views/common/header.jsp" />
+      <put-attribute name="gnb" value="/WEB-INF/views/common/gnb.jsp" />
+      <put-attribute name="quickmenu" value="/WEB-INF/views/common/quickmenu.jsp" />
+      <put-attribute name="body" value="" />
+      <put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp" />
+   </definition>
+
+
+   
+   <definition name="/main/main" extends="baseLayout">
+      <put-attribute name="title" value="메인페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/main/main.jsp" />
+   </definition>
+   <definition name="/lodge/category_click" extends="baseLayout">
+      <put-attribute name="title" value="캠핑" />
+      <put-attribute name="body" value="/WEB-INF/views/lodge/category_click.jsp" />
+   </definition>
+   <definition name="/lodge/category_click2" extends="baseLayout">
+      <put-attribute name="title" value="글램핑" />
+      <put-attribute name="body" value="/WEB-INF/views/lodge/category_click2.jsp" />
+   </definition>
+   <definition name="/lodge/category_click3" extends="baseLayout">
+      <put-attribute name="title" value="카라반" />
+      <put-attribute name="body" value="/WEB-INF/views/lodge/category_click3.jsp" />
+   </definition>
+   <definition name="/lodge/category_click4" extends="baseLayout">
+      <put-attribute name="title" value="차박" />
+      <put-attribute name="body" value="/WEB-INF/views/lodge/category_click4.jsp" />
+   </definition>
+   <definition name="/goods/category_click5" extends="baseLayout">
+      <put-attribute name="title" value="캠핑용품" />
+      <put-attribute name="body" value="/WEB-INF/views/goods/category_click5.jsp" />
+      <put-attribute name="quickmenu" value="/WEB-INF/views/common/goodsquickmenu.jsp" />
+   </definition>
+   
+   
+   
+   
+   
+   
+<!-- baseLayout2 -->
+   	<definition name="baseLayout2"  template="/WEB-INF/views/common/layout2.jsp">
+		<put-attribute name="title" value="" />
+      	<put-attribute name="header" value="/WEB-INF/views/common/header.jsp" />
+      	<put-attribute name="body" value="" />
+      	<put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp" />
+	</definition>
+	<!-- error -->
+	<definition name="/errors/err404" extends="baseLayout2">
+		<put-attribute name="title" value="로그인 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/errors/err404.jsp" />
+	</definition>
+	<definition name="/errors/err500" extends="baseLayout2">
+		<put-attribute name="title" value="로그인 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/errors/err500.jsp" />
+	</definition>
+	
+	<definition name="/member/loginForm" extends="baseLayout2">
+		<put-attribute name="title" value="로그인 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/member/loginForm.jsp" />
+	</definition>
+
+   <definition name="/member/selectAdd" extends="baseLayout2">
+      <put-attribute name="title" value="회원가입 페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/member/selectAdd.jsp" />
+   </definition>
+   <definition name="/member/addMemberWrite" extends="baseLayout2">
+      <put-attribute name="title" value="개인회원가입 페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/member/addMemberWrite.jsp" />
+   </definition>
+   <definition name="/member/addbusinessperson" extends="baseLayout2">
+      <put-attribute name="title" value="개인회원가입 페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/member/addbusinessperson.jsp" />
+   </definition>
+   <definition name="/order/camping_pay" extends="baseLayout2">
+      <put-attribute name="title" value="숙소예약" />
+      <put-attribute name="body" value="/WEB-INF/views/order/camping_pay.jsp" />
+   </definition>
+   <definition name="/member/joinSuccess" extends="baseLayout2">
+		<put-attribute name="title" value="로그인 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/member/joinSuccess.jsp" />
+   </definition>
+   <definition name="/member/businesspersonlogin" extends="baseLayout2">
+		<put-attribute name="title" value="로그인 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/member/businesspersonlogin.jsp" />
+   </definition>
+   <definition name="/businessLods/business_addLod" extends="baseLayout2">
+		<put-attribute name="title" value="숙소등록" />
+		<put-attribute name="body" value="/WEB-INF/views/businessLods/business_addLod.jsp" />
+   </definition>
+     
+     <definition name="/businessLods/business_addUnit" extends="baseLayout2">
+		<put-attribute name="title" value="객실등록" />
+		<put-attribute name="body" value="/WEB-INF/views/businessLods/business_addUnit.jsp" />
+   </definition>
+   
+   <definition name="/businessLods/business_main" extends="baseLayout2">
+		<put-attribute name="title" value="사업자 메인 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/businessLods/business_main.jsp" />
+   </definition>
+   
+     <definition name="/businessLods/lodsDetail" extends="baseLayout2">
+		<put-attribute name="title" value="숙소 상세 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/businessLods/lodsDetail.jsp" />
+   </definition>
+   
+   
+   
+   
+<!-- baseLayout3 -->
+   <definition name="baseLayout3"  template="/WEB-INF/views/common/layout3.jsp">
+		<put-attribute name="title" value="" />
+      	<put-attribute name="header" value="/WEB-INF/views/common/header.jsp" />
+      	<put-attribute name="quickmenu" value="/WEB-INF/views/common/quickmenu.jsp" />
+      	<put-attribute name="body" value="" />
+      	<put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp" />
+	</definition>
+	<definition name="/lodge/campingMain" extends="baseLayout3">
+      <put-attribute name="title" value="숙소상세페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/lodge/campingMain.jsp" />
+   </definition>
+	<definition name="/member/info" extends="baseLayout3">
+      <put-attribute name="title" value="회원정보찾기" />
+      <put-attribute name="body" value="/WEB-INF/views//member/info.jsp" />
+   </definition>
+   <definition name="/member/info_id" extends="baseLayout3">
+      <put-attribute name="title" value="아이디찾기" />
+      <put-attribute name="body" value="/WEB-INF/views//member/info_id.jsp" />
+   </definition>
+   <definition name="/member/id_find" extends="baseLayout3">
+      <put-attribute name="title" value= "비밀번호찾기" />
+      <put-attribute name="body" value="/WEB-INF/views//member/id_find.jsp" />
+   </definition>
+   <definition name="/member/pw_find" extends="baseLayout3">
+      <put-attribute name="title" value= "비밀번호찾기" />
+      <put-attribute name="body" value="/WEB-INF/views//member/pw_find.jsp" />
+   </definition>
+   <definition name="/business/addLodWrite" extends="baseLayout3">
+      <put-attribute name="title" value= "비밀번호찾기" />
+      <put-attribute name="body" value="/WEB-INF/views/business/addLodWrite.jsp" />
+   </definition>
+   
+<!-- baseLayout4 -->
+	<definition name="baseLayout4"  template="/WEB-INF/views/common/layout4.jsp">
+		<put-attribute name="title" value="" />
+      	<put-attribute name="header" value="/WEB-INF/views/common/header.jsp" />
+      	<put-attribute name="quickmenu" value="/WEB-INF/views/common/quickmenu.jsp" />
+      	<put-attribute name="body" value="" />
+      	<put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp" />
+	</definition>
+	<definition name="/mypage/MypageReserveChk" extends="baseLayout4">
+      <put-attribute name="title" value="예약내역" />
+      <put-attribute name="body" value="/WEB-INF/views/mypage/MypageReserveChk.jsp" />
+   </definition>
+</tiles-definitions>

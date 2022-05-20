@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/galgga/Lod/vo/LodVO.java=UTF-8
+encoding//src/main/java/com/galgga/Lod/vo/UnitVO.java=UTF-8
+encoding//src/main/java/com/galgga/businessLods/controller/BusinessLodsControllerImpl.java=UTF-8
+encoding//src/main/java/com/galgga/imgCntroller/ThumbnailsController.java=UTF-8
+encoding//src/main/java/com/galgga/imgCntroller/imgController.java=UTF-8
+encoding//src/main/java/com/galgga/member/controller/MemberControllerImpl.java=UTF-8
+encoding//src/main/java/com/galgga/reserve/controller/ReserveControllerImpl.java=UTF-8
